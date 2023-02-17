@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login Successful</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login Successful</h1>
+		<p>Welcome, <span id="username"></span>!</p>
+	</div>
+
+	<script>
+		// Retrieve username from localStorage and display it on the page
+		document.getElementById("username").textContent = localStorage.getItem("username");
+	</script>
+</body>
+</html>
