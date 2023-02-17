@@ -8,8 +8,8 @@ function submitLoginForm(event) {
 
   const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'password',
+    user: 'nishith',
+    password: '152128',
     database: 'login_page'
   });
 
