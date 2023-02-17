@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Login Successful</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<h1>Login Successful</h1>
-		<p>Welcome, <span id="username"></span>!</p>
-	</div>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page - Success</title>
+  </head>
+  <body>
+    <h1>Login successful</h1>
+    <p>Welcome, <span id="username"></span>!</p>
 
-	<script>
-		// Retrieve username from localStorage and display it on the page
-		document.getElementById("username").textContent = localStorage.getItem("username");
-	</script>
-</body>
+    <script>
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const params = Object.fromEntries(urlSearchParams.entries());
+
+      const username = params.username;
+      document.getElementById("username").textContent = username;
+    </script>
+  </body>
 </html>
